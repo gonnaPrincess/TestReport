@@ -10,3 +10,4 @@ with open(report_full_path, mode='wb') as save_to_file:
     save_to_file.write(one_num.to_bytes(1, byteorder='big'))
 
 
+
