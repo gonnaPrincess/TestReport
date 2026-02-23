@@ -4,8 +4,9 @@ import random
 one_num = (random.randint(0, 101))
 
 # report_full_path = "./reports/" + "report_" + datetime.strftime(datetime.now(), "%Y%m%d_%H%M%S") + ".html"
-report_full_path = f"report_{current_time}.html"
+report_full_path = "report_" + datetime.strftime(datetime.now(), "%Y%m%d_%H%M%S") + ".html"
 
 with open(report_full_path, mode='wb') as save_to_file:
     save_to_file.write(one_num.to_bytes(1, byteorder='big'))
+
 
